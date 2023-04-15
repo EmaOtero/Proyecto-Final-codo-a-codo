@@ -16,6 +16,10 @@
                 padding: 0;
                 margin: 0;
             }
+
+            form{
+                margin: 0 auto;
+            }
     
             header {
                 text-align: center;
@@ -88,6 +92,7 @@
                 border-radius: 10px;
                 background-color: #f2f2f2;
                 padding: 20px;
+                margin: auto;
             }
             .footer {
                 background-color: #333;
@@ -112,11 +117,11 @@
         <nav class="navbar-top">
             <ul class="navbar-top-ul">
                 <li class="navbar-top-item">
-                    <a href="login.html" class="navbar-top-links">Inicio</a>
+                    <a href="index.html" class="navbar-top-links">Inicio</a>
                 </li>
             <ul class="navbar-top-ul">
                 <li class="navbar-top-item">
-                    <a href="index.html" class="navbar-top-links">Nosotros</a>
+                    <a href="index.html"navbar-top-links">Nosotros</a>
                 </li>
             </ul>    
                 <li class="navbar-top-item">
@@ -132,7 +137,7 @@
             </header>
 
     <div>
-        <form>
+        <form class="div.contenedor-formulario>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aquí" required [a-zA-Z]>
             <label for="apellido">Apellido:</label>
@@ -162,6 +167,8 @@
                 <option value="Inglaterra">Inglaterra</option>
             </optgroup>
             </select>
+            <label for="consulta">Consulta:</label>
+            <input type="text" id="consulta" name="consulta" placeholder="Escriba su consulta aquí" required>
             <br>
             <br>
             <input type="submit" value="Enviar el formulario">
